@@ -59,7 +59,38 @@ ul{
 #menu ul li a:hover{
     color: #01d112;
 }
-
+.container-banner{
+    background-image: url(images/bg.jpg);
+    height: 585px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.container-interno{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: black;
+    height: auto;
+    margin-top: 150px;
+}
+.container-interno h1{
+    font-size: 60px;
+    font-family: "Shodows into Light", sans-serif;
+}
+.container-interno h2{
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 30px 0;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+}
+.container-interno a{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-family: "Source Sans Pro", sans-serif;
+}
  /*Estilização footer*/
  footer{
      background: rgb(238, 238, 238);
