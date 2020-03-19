@@ -16,13 +16,55 @@
 }
 
 #logo {
+<<<<<<< HEAD
         top: 20px;
 	right: 1400px;
 	
+=======
+    position: relative;
+    width: 100px;
+>>>>>>> cf08581b0119b3512bc5513aae994871c5ce7e85
 }
 
 #logo_01 {
-    position: absolute;
-    top: 20px;
-    right: 1000px;
+    position: relative;
+}
+
+div a#capa{
+    text-align: center;
+    color: black;
+    font: bold 22px arial;
+    display: block;
+    text-decoration: none;
+    padding:5px 10px;
+	border-radius: 10px;
+    
+}
+
+div a#capa:hover{
+    text-align: center;
+    color: red;
+    font: bold 22,5px arial;
+    text-decoration: underline;
+    padding:5px 10px;
+	border-radius: 10px;
+}
+
+hr{
+    border-color:#aaa;
+    box-sizing:initial;
+    width:80%;  
+}
+
+div{
+
+	text-align: center;
+	width:20%;
+	float: left;
+	margin-right:10px;
+}
+
+div a, div img {
+	display: block;
+	margin:0 auto;
 }
