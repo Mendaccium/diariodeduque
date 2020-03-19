@@ -1,0 +1,28 @@
+#geral {
+	background: ghostwhite;
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0;
+	margin-bottom:0;
+	margin:0 auto;
+	padding:10px 5px 10px 15px;
+}
+
+#busca {
+	position: absolute;
+	top:20px;
+	right:180px;
+}
+
+#logo {
+        top: 20px;
+	right: 1400px;
+	
+}
+
+#logo_01 {
+    position: absolute;
+    top: 20px;
+    right: 1000px;
+}
