@@ -8,3 +8,9 @@
 	margin:0 auto;
 	padding:10px 5px 10px 15px;
 }
+
+#busca {
+	position: absolute;
+	top:20px;
+	right:180px;
+}
