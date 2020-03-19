@@ -1,0 +1,86 @@
+/*limpar formataçoes padroes do navegador*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 12px;
+    font-family: "Trebuchet MS", sans-serif, Helvetica;
+}
+ul{
+    padding: 0px !important;
+}
+.menu-principal main{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+.menu-principal{
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    height: 80px;
+    border-bottom: 3px solid #d8d8d8;
+}
+
+#logo{
+    padding: 8px 0;
+
+    float: left;
+    left: 200%;
+}
+/* Formatação do menu de navegacao*/
+#menu{
+    float: right;
+    padding: 25px 0;
+}
+#menu ul li{
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 5px;
+    height: 45px;
+}
+#menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: initial;
+    color: #838383;
+    padding: 80px;
+    
+}
+#menu ul li:hover{
+    border-bottom: 3px solid #01d112;;
+}
+#menu ul li a:hover{
+    color: #01d112;
+}
+
+ /*Estilização footer*/
+ footer{
+     background: rgb(238, 238, 238);
+     padding: 30px 0px;
+     position: absolute;
+     width: 100%;
+     top: 1680px;
+ }
+ footer .autoria{
+    text-align: center;
+ }
+footer .autoria p{
+    margin: 6px 0;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+footer .autoria a{
+    color: black;
+    text-decoration: none;
+}
+footer .autoria a:hover{
+    color: #F5A503;
+}
