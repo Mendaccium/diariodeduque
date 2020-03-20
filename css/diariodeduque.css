@@ -3,6 +3,27 @@
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: opensans;
+    src: url('../fonts/OpenSans-Regular.ttf')
+}
+
+@font-face {
+    font-family: opensans-bold;
+    src: url('../fonts/OpenSans-Bold.ttf')
+}
+
+@font-face {
+    font-family: opensans-extra-bold;
+    src: url('../fonts/OpenSans-ExtraBold.ttf')
+}
+
+@font-face {
+    font-family: opensans-semi-bold;
+    src: url('../fonts/OpenSans-SemiBold.ttf')
+}
+
 body{
     width: 100%;
     height: 100%;
@@ -11,8 +32,9 @@ body{
     justify-content: center;
     min-height: 100vh;
     font-size: 12px;
-    font-family: "Trebuchet MS", sans-serif, Helvetica;
+    font-family: opensans;
 }
+
 ul{
     padding: 0px !important;
 }
@@ -145,7 +167,7 @@ footer .autoria a:hover{
 
 .card-text{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensans;
     font-size: 15px;
     color: black;
 }
@@ -171,14 +193,17 @@ a .container{
     padding-left: 30px;
     text-transform: uppercase;
     font-size: 15px;
-    color: green;
+    color: black;
+    font-family: opensans-bold;
 }
 
 #destaque-subtitulo{
     font-size: 30px;
     padding-left: 30px;
-    color: black;
+    color: green;
     transition: 0.2s;
+    font-weight: bold;
+    font-family: opensans-extra-bold;
 }
 
 #destaque-subtitulo:hover{
@@ -190,61 +215,130 @@ a .container{
 #destaque-secundario{
     width: 100%;
     padding: 30px;
-    
 }
     /*slide*/
 
-div.slide{
-    width: 20.5%;
+.master-slideshow{
+    padding-right: 100px;
+}
+
+.slideshow{
+    width: 22.5%;
+    overflow: hidden;
     float: left;
-    padding-right: 10px;
 }
 
-div.slide-top img{
-    width: 33.33%;
-    float: left;
-    opacity: 0.5;
-    transition: 0.5s ease;
-}
-
-div.slide-top-last img{
-    width: 33.33%;
-    opacity: 0.5;
-    transition: 0.5s ease;
-}
-
-div.slide-bottom img{
+.navigation{
     width: 100%;
+    top: 50%;
+    left: 50%;
 }
 
-div.slide div.slide-top img:hover{
+.bar img{
+    opacity: 0.5;
+    width: 33.333%;
+    float: left;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.bar img:hover{
     opacity: 1;
 }
 
-div.slide div.slide-top-last img:hover{
-    opacity: 1;
+
+input[name = "r"]{
+   position: absolute;
+   visibility: hidden;
 }
 
+.slides{
+    width: 300%;
+    display: flex;
+}
+
+.slide{
+    width: 33.333%;
+    transition: 0.8s;
+}
+
+.slide :hover ~ div.desc{
+    background-color: rgb(228, 228, 228);
+}
+
+.slide :hover ~ div.categoria{
+    font-size: 20px;
+    background-color: rgb(228, 228, 228);
+}
+
+.slide img{
+    width: 100%;
+    height: 75%;
+    transition: 0.8s;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -33.333%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -66.666%;
+}
+
+.desc{
+    height: 18.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.categoria{
+    height: 6.5%;
+    position: relative;
+    background-color: darkgreen;
+    font-size: 13px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.categoria:hover{
+    background-color: green;
+}
+
+.slideshow:hover ~ .categoria{
+    font-size: 10px;
+}
     /*fim de slide*/
+
 div.destaque-secundario{
     width: 100%;
-    padding: 5px;
+    padding: 30px;
+}
+
+.destaque-secundario-hr{
+    width: 50%;
 }
 
 div.destaque-titulo{
     text-transform: uppercase;
     font-size: 20px;
-    color: green;
-    padding-bottom: 0px;
-    padding-top: 10px;
+    color: black;
+    font-family: opensans;
 }
 
 div.destaque-subtitulo{
     font-size: 25px;
-    color: black;
-    padding-bottom: 7px;
-    
+    color: green;
     transition: 0.2s ease;
+    font-family: opensans-bold;
 }
 
 div.destaque-secundario div.destaque-subtitulo:hover{
@@ -255,6 +349,7 @@ div.destaque-secundario div.destaque-subtitulo:hover{
 div.sub{
     text-align: left;
     padding-left: 30px;
+    padding-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     

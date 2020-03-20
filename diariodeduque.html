@@ -7,7 +7,7 @@
 	</style>
 	<link rel="stylesheet" href="css/diariodeduque.css">
 </head>
-<body background="images/bg.jpg">
+<body>
 
 	<header class="menu-principal">
         <main>
@@ -48,20 +48,62 @@
 		<hr>
 	</div>
 	<div id="destaque-secundario">
-		<div class="slide">
-			<div class="slide-top">
-				<img src="images/slide_01.jpg"/>
+		<!--Sildeshow-->
+		<div class="master-slideshow">
+		<div class="slideshow middler">
+			<div class="navigation">
+				<label for="r1" class="bar">
+					<img src="images/slide_01.jpg" alt="">
+				</label>
+				<label for="r2" class="bar">
+					<img src="images/slide_02.jpg" alt="">
+				</label>
+				<label for="r3" class="bar">
+					<img src="images/slide_03.jpg" alt="">
+				</label>
 			</div>
-			<div class="slide-top">
-				<img src="images/slide_02.jpg"/>
-			</div>
-			<div class="slide-top-last">
-				<img src="images/slide_03.jpg"/>
-			</div>
-			<div class="slide-bottom">
-				<img src="images/slide_01.jpg">
+			<div class="slides">
+				<input type="radio" name="r" id="r1" checked>
+				<input type="radio" name="r" id="r2">
+				<input type="radio" name="r" id="r3">
+				<div class="slide s1">
+					<div class="categoria">
+						economia
+					</div>
+					<a href="#">
+						<img src="images/slide_01.jpg" alt="">
+					</a>
+					<div class="desc">
+						Petrobras reduz preco de gasolina, disel e gás de cozinha
+					</div>
+				</div>
+				<div class="slide s2">
+					<div class="categoria">
+						saude
+					</div>
+					<a href="#">
+						<img src="images/slide_02.jpg" alt="">
+					</a>
+					<div class="desc">
+						Maranhão possui 72 casos monitorados por suspeita de Covid-19
+					</div>
+				</div>
+				<div class="slide s3">
+					<div class="categoria">
+						politica
+					</div>
+					<a href="#">
+						<img src="images/slide_03.jpg" alt="">
+					</a>
+					<div class="desc">
+						Flávio Dino assina decreto com medidas para prevenir coronavírus
+					</div>
+				</div>
 			</div>
 		</div>
+		</div>
+		<!--Fim do slideshow-->
+		<!--Inicios das noticias ao lado no slide show-->
 		<div class="destaque-secundario"> 
 			<div class="destaque-titulo">
 				CBH duque
@@ -69,26 +111,32 @@
 			<div class="destaque-subtitulo">
 				Duque sediará seminario sobre bacias do rio parnaiba em março
 			</div>
+			
 			<div class="destaque-titulo">
 				novas atualizações
 			</div>
 			<div class="destaque-subtitulo">
 				UFMA da Duque realiza aula inaugural no novo campus
 			</div>
+			
 			<div class="destaque-titulo">
 				agronegocio
 			</div>
 			<div class="destaque-subtitulo">
 				Grupo nobre pede recuperação juducal
 			</div>
+			
 			<div class="destaque-titulo">
 				CBH duque
 			</div>
 			<div class="destaque-subtitulo">
 				Dia internacional da mulher possui rogramação especial em Duque
 			</div>
+			
 		</div>
 	</div>	
+	<!--termino-->
+	<!--inicio das sub noticias-->
 	<div class="sub">
 		<div class="sub-sub">Querida Duque</div>
 		<div class="card">
