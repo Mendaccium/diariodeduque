@@ -16,6 +16,15 @@ body{
 ul{
     padding: 0px !important;
 }
+
+hr {
+    color: rgb(184, 184, 184);
+    background-color:rgb(184, 184, 184);
+    height: 1px;
+    width: 60%;
+    margin-left: 30px;
+}
+
 .menu-principal main{
     margin: 0 auto;
     width: 100%;
@@ -29,28 +38,27 @@ ul{
 }
 
 #logo{
-    padding: 8px 0;
-
+    padding: 15px 15px;
     float: left;
     left: 200%;
 }
 /* Formatação do menu de navegacao*/
 #menu{
     float: right;
-    padding: 25px 0;
+    padding: 32px 0;
 }
 #menu ul li{
     display: inline-block;
     color: #8b8b8b;
     margin-left: 5px;
-    height: 45px;
+    height: 20px;
 }
 #menu ul li a{
     text-decoration: none;
     font-size: 18px;
     text-transform: initial;
     color: #838383;
-    padding: 80px;
+    padding: 60px;
     
 }
 #menu ul li:hover{
@@ -114,4 +122,145 @@ footer .autoria a{
 }
 footer .autoria a:hover{
     color: #F5A503;
+}
+
+/*CSS dos cards*/
+
+.card {
+    position: relative;
+    transition: 0.3s;
+    width: 20%;
+    padding-top: 20px;
+    padding-right: 50px;
+    float: left;
+}
+
+.card-top {
+    text-align: center;
+    text-transform: uppercase;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.card-text{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+.card-img img{
+    width: 100%;
+}
+
+.card:hover {
+  color: red;
+  transform: scale(1.1, 1.1);
+}
+
+a .container{
+    text-decoration: none;
+    padding: 2px 16px;
+    font-size: 20px;
+}
+
+/*noticia em destaque(principal)*/
+#destaque-titulo{
+    padding-top: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: green;
+}
+
+#destaque-subtitulo{
+    font-size: 30px;
+    padding-left: 30px;
+    color: black;
+    transition: 0.2s;
+}
+
+#destaque-subtitulo:hover{
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+/*noticias em destaque(secundária)*/
+#destaque-secundario{
+    width: 100%;
+    padding: 30px;
+    
+}
+    /*slide*/
+
+div.slide{
+    width: 20.5%;
+    float: left;
+    padding-right: 10px;
+}
+
+div.slide-top img{
+    width: 33.33%;
+    float: left;
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+
+div.slide-top-last img{
+    width: 33.33%;
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+
+div.slide-bottom img{
+    width: 100%;
+}
+
+div.slide div.slide-top img:hover{
+    opacity: 1;
+}
+
+div.slide div.slide-top-last img:hover{
+    opacity: 1;
+}
+
+    /*fim de slide*/
+div.destaque-secundario{
+    width: 100%;
+    padding: 5px;
+}
+
+div.destaque-titulo{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: green;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+div.destaque-subtitulo{
+    font-size: 25px;
+    color: black;
+    padding-bottom: 7px;
+    
+    transition: 0.2s ease;
+}
+
+div.destaque-secundario div.destaque-subtitulo:hover{
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+div.sub{
+    text-align: left;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}
+
+div.sub-sub{
+    list-style-type: square;
+    text-transform: uppercase;
 }
