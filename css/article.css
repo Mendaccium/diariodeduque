@@ -1,0 +1,28 @@
+div#article{
+
+    margin: auto;
+    padding: 30px;
+    border-bottom: black;
+    background-color: #eee;
+    margin-bottom: 10px;
+    width: 50%;
+    
+}
+div#imagem{
+    width: 50%;
+    float: right;
+    padding: 40px;
+}
+div#texto{
+    width: 50%;
+    font-family: opensans-bold;
+    float: right;
+    padding: 1px;
+}
+div#texto h1{
+    color: red;
+}
+div#texto h3{
+    font-style: italic;
+    font-family: opensans;
+}
