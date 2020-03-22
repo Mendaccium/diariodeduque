@@ -126,6 +126,7 @@ hr {
     transition: 0.3s;
 }
 
+
 .navbar-menu ul li a p{
     margin-top: 10px;
 }
@@ -522,7 +523,6 @@ div#layout{
 /*Inicio do bloco 01*/
 div#bloco-principal-01{
     width: 48.8%;
-    background-image: url('../images/coronga.jpg');
     height: 100%;
     background-size: 150%;
     float: left;
@@ -534,11 +534,11 @@ div#bloco-principal-01{
 }
 
 div#bloco-principal-01:hover .noticia-principal-01 a{
-    color: rgb(255, 255, 255);
+    color: green;
 }
 
 div#bloco-principal-01:hover .noticia-principal-01-sub a{
-    color: rgb(255, 255, 255);
+    color: green;
 }
 
 div#bloco-principal-01:hover #bloco-principal-01-layout{
@@ -572,7 +572,7 @@ div#bloco-principal-01:hover #bloco-principal-01-layout{
 }
 
 .noticia-principal-01 a{
-    color: rgb(255, 255, 255);
+    color: green;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -596,7 +596,7 @@ div#bloco-principal-01:hover #bloco-principal-01-layout{
 
 
 .noticia-principal-01-sub a li{
-    color: white;
+    color: green;
     text-decoration: none;
     margin-top: 10px;
 }
