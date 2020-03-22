@@ -52,7 +52,88 @@ hr {
     width: 60%;
     margin-left: 30px;
 }
+/*Inicio do menu principal*/
 
+.navbar{
+    width: 100%;
+    height: 100px;
+}
+
+.navbar main{
+    width: 100%;
+    height: 100%;
+    background: rgb(139,197,63);
+    background: linear-gradient(135deg, rgba(139,197,63,1)35%, rgba(38,143,58,1)100%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-logo{
+    width: 100%;
+    height: 47%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img{
+    width: 180px;
+    margin-top: 10px;
+}
+
+.navbar hr{
+    width: 1113px;
+    height: 2px;
+    margin-top: 5px;
+    margin-left: 203px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-menu{
+    width: 100%;
+    height: 46%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: opensans-bold;
+}
+
+.navbar-menu ul{
+    list-style: none;
+    height: 100%;
+}
+
+.navbar-menu ul li{
+    display: inline;
+    text-align: center;
+}
+
+.navbar-menu ul li a:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.navbar-menu ul li a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 50px;
+    height: 100%;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar-menu ul li a p{
+    margin-top: 10px;
+}
+
+
+/*Fim do menu principal*/
+
+/*
 .menu-principal main{
     margin: 0 auto;
     width: 100%;
@@ -70,7 +151,7 @@ hr {
     float: left;
     left: 200%;
 }
-/* Formatação do menu de navegacao*/
+/* Formatação do menu de navegacao
 #menu{
     float: right;
     padding: 32px 0;
@@ -95,14 +176,15 @@ hr {
 #menu ul li a:hover{
     color: #01d112;
 }
+*/
 /*bucar*/
 #buscar{
     position: absolute;
     width: 150px;
     height: 30px;
     cursor: pointer;
-    margin-top: 85px;
-    margin-left: 86%;
+    margin-top: -39px;
+    margin-left: 87%;
 }
 
 #buscar-icon{
@@ -116,27 +198,27 @@ hr {
     height: 100%;
     border-radius: 8px;
     border: 0px;
-    background-color: #838383;
+    background-color: rgba(0,0,0, 0.4);
     transition: 0.5s;
     padding-left: 30px;
     padding-right: 30px;
     font-family: opensans-bold;
-    color: whitesmoke;
+    color: rgb(155, 62, 62);
 }
 
 ::placeholder {
-    color: lightgray;
+    color: rgb(146, 146, 146);
 }
 
 #buscar-input:hover{
     background-color:whitesmoke;
-    width: 100%;
+    width: 90%;
     color: #838383;
 }
 
 #buscar-input:focus{
     background-color:whitesmoke;
-    width: 100%;
+    width: 90%;
     color: #838383;
 }
 
@@ -150,8 +232,8 @@ hr {
     font-size: 20px;
     font-weight: bold;
     color: red;
-    margin-top: -25px;
-    margin-left: 190px;
+    margin-top: -25.5px;
+    margin-left: 100px;
     visibility: hidden;
 }
 /*fim do buscar*/
@@ -538,7 +620,7 @@ div#bloco-principal-02{
 
 div#bloco-principal-layout-02{
     background-image: url('../images/free-fire-01.png');
-    width: 80%;
+    width: 100%;
     height: 100%;
     background-position: center;
     background-size: 192%;
