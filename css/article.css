@@ -14,7 +14,7 @@ div#imagem{
     padding: 40px;
 }
 div#texto{
-    width: 50%;
+    width: 100%;
     font-family: opensans-bold;
     float: right;
     padding: 1px;
