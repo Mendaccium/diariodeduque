@@ -39,6 +39,7 @@ body{
     font-size: 12px;
     font-family: opensans;
     background-color: rgb(249, 249, 249);
+    overflow-x: hidden;
 }
 
 ul{
@@ -130,54 +131,6 @@ hr {
 .navbar-menu ul li a p{
     margin-top: 10px;
 }
-
-
-/*Fim do menu principal*/
-
-/*
-.menu-principal main{
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-}
-.menu-principal{
-    width: 100%;
-    background-color: rgb(238, 238, 238);
-    height: 80px;
-    border-bottom: 3px solid #d8d8d8;
-}
-
-#logo{
-    padding: 15px 15px;
-    float: left;
-    left: 200%;
-}
-/* Formatação do menu de navegacao
-#menu{
-    float: right;
-    padding: 32px 0;
-}
-#menu ul li{
-    display: inline-block;
-    color: #8b8b8b;
-    margin-left: 5px;
-    height: 20px;
-}
-#menu ul li a{
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: initial;
-    color: #838383;
-    padding: 60px;
-    
-}
-#menu ul li:hover{
-    border-bottom: 3px solid #01d112;;
-}
-#menu ul li a:hover{
-    color: #01d112;
-}
-*/
 /*bucar*/
 #buscar{
     position: absolute;
@@ -276,7 +229,7 @@ hr {
      padding: 30px 0px;
      position: absolute;
      width: 100%;
-     top: 1680px;
+     top: auto;
  }
  footer .autoria{
     text-align: center;
@@ -510,7 +463,7 @@ div.sub-sub{
     list-style-type: square;
     text-transform: uppercase;
 }
-
+/**/
 div#layout{
     width: 80%;
     height: 600px;
@@ -619,7 +572,7 @@ div#bloco-principal-02{
 }
 
 div#bloco-principal-layout-02{
-    background-image: url('../images/free-fire-01.png');
+    background-image: url('../images/champios-league-01.png');
     width: 100%;
     height: 100%;
     background-position: center;
@@ -634,7 +587,7 @@ div#bloco-principal-layout-02{
 
 .noticia-principal-02{
     width: 100%;
-    padding-top: 70%;
+    padding-top: 60%;
     padding-left: 20px;
     font-family: opensans-extra-bold;
     font-size: 40px;
@@ -665,5 +618,118 @@ div#bloco-principal-layout-02{
     font-family: opensans-light;
 }
 
+/*esporte*/
+div#layout.esporte{
+    width: 80%;
+    height: 600px;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+div.esporte div#bloco-principal-02{
+    width: 100%;
+    height: 100%;
+    float: left;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 15px;
+}
+
+div.esporte div#bloco-principal-layout-02{
+    background-image: url('../images/champions-league.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+div.esporte #bloco-principal-layout-02:hover{
+    background-size: 110%;
+}
+
+div.esporte .noticia-principal-02{
+    position: absolute;
+    width: 100%;
+    padding-top: 30%;
+    font-family: opensans-extra-bold;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+div.esporte .noticia-principal-02 a{
+    color: white;
+    text-shadow: black 0.05em 0.05em 0.2em;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: opensans-extra-bold;
+}
+
+div.esporte .noticia-principal-02 a:active ~ div#layout-video.esporte{
+    visibility: visible;
+}
+
+div.esporte .noticia-principal-02-sub{
+    position: absolute;
+    width: 80%;
+    font-family: opensans-light;
+    margin-left: 20px;
+    margin-top: 35%;
+    transition: 0.5s;
+}
+
+div.esporte .noticia-principal-02-sub a:active ~ div#layout-video.esporte{
+    visibility: visible;
+}
+
+div.esporte .noticia-principal-02-sub a{
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+    font-family: opensans-light;
+}
+
+/*video*/
+
+#layout-video.esporte #texto h1{
+    font-family: opensans-extra-bold;
+    font-size: 25px;
+    color: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+#layout-video.esporte #texto h2{
+    font-family: opensans-bold;
+    font-size: 25px;
+    color: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+#layout-video.esporte #video video{
+    margin-left: 35%;
+}
+
+/*fim video*/
+footer a{
+    text-decoration: none;
+    color: black;
+    font-family: opensans;
+}
+
+footer a:hover{
+    color: green;
+}
 
 
